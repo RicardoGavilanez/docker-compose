@@ -19,3 +19,5 @@ services:
             MYSQL_ROOT_PASSWORD: root
         volumes:
             - ./wordpress/:/data/wordpress
+            - ./wp-content:/var/www/html/wp-content
+            - ./wp-config.php:/usr/src/wordpress/wp-config-sample.php
